@@ -37,17 +37,49 @@
       "previous": "Page précédente"
     },
     "search": {
-      "search": "Recherche"
+      "search": "Recherche",
+      "placeholder": "Votre demande",
+      "header_placeholder": "Qu'est-ce que tu cherches?",
+      "products": "Des produits",
+      "articles": "Des articles"
     },
     "cart": {
       "view": "Afficher mon panier ({{ count }})",
-      "item_added": "Article ajouté au panier"
+      "item_added": "Article ajouté au panier",
+      "empty_cart": "Il semble que vous n'ayez encore rien ajouté, commençons !",
+      "label": "Chariot"
     },
     "share": {
       "copy_to_clipboard": "Copier le lien",
       "share": "Partager",
       "share_url": "Lien",
-      "success_message": "Lien copié dans le presse-papiers !"
+      "success_message": "Lien copié dans le presse-papiers !",
+      "links": {
+        "copy": "Copier le lien"
+      }
+    },
+    "countdown": {
+      "days": "jours",
+      "hours": "heures",
+      "seconds": "secondes"
+    },
+    "card": {
+      "view__all": "Voir tout",
+      "shop__now": "Commencer à magasiner",
+      "quick__view": "Aperçu rapide",
+      "collection_name": "Nom de la collection",
+      "view__more": "Afficher le produit complet"
+    },
+    "blog": {
+      "author": "par",
+      "update": "Mis à jour le",
+      "publish": "Publié le",
+      "all": "Tous",
+      "read_now": "Lisez maintenant"
+    },
+    "dark_mode": {
+      "dark": "Mode sombre",
+      "light": "Mode lumière"
     }
   },
   "date_formats": {
@@ -56,7 +88,8 @@
   "newsletter": {
     "label": "Votre e-mail",
     "success": "Merci de votre inscription",
-    "button_label": "S'inscrire"
+    "button_label": "S'inscrire",
+    "button_label_request": "Envoyer une demande"
   },
   "accessibility": {
     "skip_to_text": "Ignorer et passer au contenu",
@@ -73,7 +106,12 @@
     "previous_slide": "Faire glisser vers la gauche",
     "loading": "Chargement en cours...",
     "of": "sur",
-    "skip_to_product_info": "Passer aux informations produits"
+    "skip_to_product_info": "Passer aux informations produits",
+    "toggle": "Bouton de menu plein écran",
+    "product_link": "Lien produit",
+    "article_link": "Lien de l'article",
+    "link": "Lien",
+    "cart_link": "Ouvrir le panier"
   },
   "blogs": {
     "article": {
@@ -110,7 +148,13 @@
         "label": "Quantité",
         "input_label": "Quantité pour {{ product }}",
         "increase": "Augmenter la quantité de {{ product }}",
-        "decrease": "Réduire la quantité de {{ product }}"
+        "decrease": "Réduire la quantité de {{ product }}",
+        "minimum_of": "Minimum de {{ quantity }}",
+        "maximum_of": "Maximum de {{ quantity }}",
+        "multiples_of": "Incréments de {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> dans le panier",
+        "in_stock": "{{ quantity }} articles en stock",
+        "out_of_stock": "En rupture de stock"
       },
       "price": {
         "from_price_html": "Du {{ price }}",
@@ -139,10 +183,55 @@
         "open_media": "Ouvrir {{ index }} des supports multimédia dans la vue de la galerie",
         "play_model": "Lire la visionneuse 3D",
         "play_video": "Lire la vidéo"
-      }
+      },
+      "view_product": "Voir le produit",
+      "choose_product_options": "Choisissez les options pour {{ product_name }}",
+      "buy_with": "Achetez-le avec :",
+      "quick_buy": "Achat rapide",
+      "complete_this_look": "Complétez ce look",
+      "modal_1": "Informations sur la livraison",
+      "modal_2": "Comment choisir la taille",
+      "value_unavailable": "{{ option_value }} - Indisponible",
+      "variant_sold_out_or_unavailable": "Variante épuisée ou indisponible",
+      "product_heading": "Nom de votre produit",
+      "product_description": "Description de votre produit",
+      "include_taxes": "Taxe inclu.",
+      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">Frais de port<\/a> calculés à la caisse."
     },
     "modal": {
       "label": "Galerie de supports multimédias"
+    },
+    "load_more": {
+      "label": "Charger plus"
+    },
+    "facets": {
+      "all": "Tous",
+      "apply": "Appliquer",
+      "clear": "Clair",
+      "clear_all": "Tout effacer",
+      "from": "Depuis",
+      "filter_and_sort": "Filtrer et trier",
+      "filter_by_label": "Filtre ( {{ count }} )",
+      "filter_button": "Filtre",
+      "filters_selected": {
+        "one": "{{ count }} sélectionné",
+        "other": "{{ count }} sélectionné"
+      },
+      "price_range": "Prix : {{ min_price }} – {{ max_price }}",
+      "max_price": "Le prix le plus élevé est {{ price }}",
+      "product_count": {
+        "one": "Affichage {{ product_count }} produit sur {{ count }}",
+        "other": "Affichage {{ product_count }} produits sur {{ count }}"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} produit",
+        "other": "{{ count }} produits"
+      },
+      "reset": "Clair",
+      "sort_button": "Trier",
+      "sort_by_label": "Trier par:",
+      "to": "À",
+      "clear_filter": "Effacer le filtre"
     }
   },
   "templates": {
@@ -181,6 +270,13 @@
       "cart_count": {
         "one": "{{ count }} article",
         "other": "{{ count }} articles"
+      },
+      "popular_articles": "Articles populaires",
+      "popular_items": "Articles populaires",
+      "shop_all": "Tout magasiner",
+      "read_all": "Lis tout",
+      "mega-menu": {
+        "submenu-view-all": "Voir tout"
       }
     },
     "cart": {
@@ -204,7 +300,14 @@
         "total": "Total",
         "quantity": "Quantité"
       },
-      "update": "Mettre à jour"
+      "update": "Mettre à jour",
+      "title_first": "Achats",
+      "title_last": "Chariot",
+      "discount": "Rabais",
+      "checkout_page": "Passer à la caisse",
+      "empty_btn_label": "Commencer à magasiner",
+      "calculated_text": "Calculé à la caisse",
+      "remove": "Retirer"
     },
     "footer": {
       "payment": "Moyens de paiement",
@@ -213,7 +316,8 @@
     "featured_blog": {
       "view_all": "Tout afficher",
       "onboarding_title": "Article de blog",
-      "onboarding_content": "Donnez à vos clients un résumé de votre article de blog"
+      "onboarding_content": "Donnez à vos clients un résumé de votre article de blog",
+      "read_more": "En savoir plus"
     },
     "featured_collection": {
       "view_all": "Tout afficher",
@@ -245,7 +349,19 @@
       "filters_selected": {
         "one": "{{ count }} sélectionné",
         "other": "{{ count }} sélectionnés"
-      }
+      },
+      "all": "Tous",
+      "empty_results": "Aucun produit trouvé",
+      "results_use_fewer_filters_html": "Utilisez moins de filtres ou <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;\/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">supprimez-les tous<\/a>"
+    },
+    "categories-list": {
+      "more": "Plus"
+    },
+    "vendor": {
+      "empty": "Il n'y a pas de vendeurs dans votre magasin"
+    },
+    "video": {
+      "load_video": "Chargement de la vidéo"
     }
   },
   "localization": {
@@ -375,6 +491,18 @@
       "expired": "Expiré",
       "copy_code_success": "Le code a bien été copié",
       "print_gift_card": "Imprimer"
+    }
+  },
+  "shopify": {
+    "notices": {
+      "line_item": {
+        "item_status": {
+          "add_variant": "%{delta} ajouté",
+          "increment_item": "%{delta} ajouté",
+          "decrement_item": "Supprimé %{delta} de %{total}",
+          "decrement_fulfilled_line_item": "%{delta} renvoyé sur %{total}"
+        }
+      }
     }
   }
 }
