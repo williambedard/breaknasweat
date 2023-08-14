@@ -242,7 +242,34 @@
         "other": "{{ count }} résultats trouvés pour « {{ terms }} »"
       },
       "title": "Résultats de la recherche",
-      "page": "Page"
+      "page": "Page",
+      "products": "Des produits",
+      "showing_count": "Affichage {{ count }} résultats de produits.",
+      "results_count": {
+        "one": "{{ count }} résultat",
+        "other": "{{ count }} résultats"
+      },
+      "item_count": {
+        "one": "{{ count }} élément",
+        "other": "{{ count }} éléments"
+      },
+      "article_count": {
+        "one": "{{ count }} Article",
+        "other": "{{ count }} articles"
+      },
+      "suggestions_count": {
+        "one": "{{ count }} suggestion",
+        "other": "{{ count }} suggestions"
+      },
+      "page_count": {
+        "one": "{{ count }} Page",
+        "other": "{{ count }} pages"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} produit",
+        "other": "{{ count }} produits"
+      },
+      "search_for": "Rechercher \" {{ terms }} \""
     },
     "cart": {
       "cart": "Panier"
@@ -255,12 +282,14 @@
         "comment": "Commentaire",
         "send": "Envoyer",
         "post_success": "Merci de nous avoir contactés. Nous vous répondrons dès que possible.",
-        "error_heading": "Veuillez ajuster les éléments suivants :"
+        "error_heading": "Veuillez ajuster les éléments suivants :",
+        "title": "Formulaire de contact"
       }
     },
     "404": {
       "title": "Page non trouvée",
-      "subtext": "404"
+      "subtext": "404",
+      "text": "La page que vous recherchez est introuvable. Il a peut-être été supprimé, renommé ou n'existait pas en premier lieu. Peut-être que la recherche peut aider."
     }
   },
   "sections": {
@@ -375,7 +404,15 @@
       "title": "Compte",
       "details": "Détails du compte",
       "view_addresses": "Voir les adresses",
-      "return": "Retour aux détails du compte"
+      "return": "Retour aux détails du compte",
+      "title_1": "Bienvenue à",
+      "title_2": "Votre compte",
+      "title_3": "Bonjour, ",
+      "shopping_cart": "Panier",
+      "account_button_shop": "Commencer à magasiner",
+      "my_account": "Mon compte",
+      "your_information": "Vos informations",
+      "name": "Nom"
     },
     "account_fallback": "Compte",
     "activate_account": {
@@ -384,7 +421,8 @@
       "password": "Mot de passe",
       "password_confirm": "Confirmer le mot de passe",
       "submit": "Activer le compte",
-      "cancel": "Décliner l'invitation"
+      "cancel": "Décliner l'invitation",
+      "no_account_yet": "Pas encore de compte ?"
     },
     "addresses": {
       "title": "Adresses",
@@ -407,7 +445,11 @@
       "cancel": "Annuler",
       "edit": "Modifier",
       "delete": "Supprimer",
-      "delete_confirm": "Êtes-vous certain(e) de vouloir supprimer cette adresse ?"
+      "delete_confirm": "Êtes-vous certain(e) de vouloir supprimer cette adresse ?",
+      "book": "Carnet d'adresses",
+      "add_new_other": "Ajouter une nouvelle adresse",
+      "name": "Nom",
+      "none": "Votre carnet d'adresses est vide"
     },
     "log_in": "Connexion",
     "log_out": "Déconnexion",
@@ -421,7 +463,8 @@
       "password": "Mot de passe",
       "title": "Connexion",
       "sign_in": "Connexion",
-      "submit": "Envoyer"
+      "submit": "Envoyer",
+      "customer_exist": "Cette adresse e-mail est déjà associée à un compte."
     },
     "orders": {
       "title": "Historique des commandes",
@@ -444,7 +487,9 @@
       "last_name": "Nom de famille",
       "email": "E-mail",
       "password": "Mot de passe",
-      "submit": "Créer"
+      "submit": "Créer",
+      "breadcrumb": "Compte",
+      "have_account": "Vous avez déjà un compte?"
     },
     "reset_password": {
       "title": "Réinitialiser le mot de passe du compte",
@@ -475,7 +520,9 @@
       "tracking_url": "Lien de suivi",
       "tracking_company": "Transporteur",
       "tracking_number": "Numéro de suivi",
-      "subtotal": "Sous-total"
+      "subtotal": "Sous-total",
+      "title_1": "Ton",
+      "title_2": "Commande"
     }
   },
   "gift_cards": {
@@ -503,6 +550,27 @@
           "decrement_fulfilled_line_item": "%{delta} renvoyé sur %{total}"
         }
       }
+    }
+  },
+  "popular": {
+    "new": "Nouveau"
+  },
+  "about": {
+    "more": "Plus",
+    "less": "Moins"
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Je veux l'envoyer en cadeau",
+      "email_label": "Destinataire E-mail",
+      "email_label_optional_for_no_js_behavior": "E-mail du destinataire (facultatif)",
+      "email": "E-mail",
+      "name_label": "Nom du destinataire (facultatif)",
+      "name": "Nom",
+      "message_label": "Message (optionnel)",
+      "max_characters": "{{ max_chars }} caractères maximum",
+      "send_on": "AAAA-MM-JJ",
+      "send_on_label": "Envoyer (facultatif)"
     }
   }
 }
